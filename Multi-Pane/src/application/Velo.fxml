@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VeloController">
+   <center>
+      <AnchorPane prefHeight="633.0" prefWidth="1034.0" styleClass="BorderPane" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="veloCourse" fitHeight="283.0" fitWidth="299.0" layoutX="85.0" layoutY="164.0" onMouseClicked="#clickOnVeloCourse" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/course/bmc-purple.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="veloVille" fitHeight="231.0" fitWidth="380.0" layoutX="637.0" layoutY="201.0" onMouseClicked="#clickOnVeloVille" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/ville/villeJaune.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="afficheTest" layoutX="143.0" layoutY="452.0" prefHeight="34.0" prefWidth="171.0" styleClass="Label" text="Vélo de course">
+               <font>
+                  <Font name="Impact" size="27.0" />
+               </font></Label>
+            <Label fx:id="afficheTest1" layoutX="733.0" layoutY="452.0" prefHeight="34.0" prefWidth="148.0" styleClass="Label" text="Vélo de ville">
+               <font>
+                  <Font name="Impact" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
